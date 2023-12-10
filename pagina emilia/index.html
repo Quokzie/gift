@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>For my pookie patootie</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Fontawesome CDN Link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> 
+        <!-- Bootstrap Font Icon CSS --> 
+
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class="bi bi-suit-heart-fill icon"></i>
+      <a href="index.html"><div class="logo_name">Emilia</div></a>        
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+
+      <li>
+        <a href="cats.html">
+            <i class="fa-solid fa-cat" style="color: #e1e1e1;"></i>
+          <span class="links_name">Cats</span>
+        </a>
+         <span class="tooltip">Cats</span>
+      </li>
+      <li>
+       <a href="music.html">
+        <i class="fa-brands fa-itunes-note"></i>
+         <span class="links_name">Music</span>
+       </a>
+       <span class="tooltip">Music</span>
+     </li>
+     <li>
+       <a href="games.html">
+        <i>
+            <i class="bi bi-controller"></i>
+        </i>
+         <span class="links_name">Games</span>
+       </a>
+       <span class="tooltip">Games</span>
+     </li>
+     <li>
+       <a href="you.html">
+         <i class="fa-solid fa-person-dress" style="color: #ffffff;"></i>
+         <span class="links_name">You</span>
+       </a>
+       <span class="tooltip">You</span>
+     </li>
+     <li>
+       <a href="questionnaire.html">
+        <i class="bi bi-card-checklist"></i>
+         <span class="links_name">questionnaire</span>
+       </a>
+       <span class="tooltip">questionnaire</span>
+     </li>
+     <li>
+       <a href="birthday.html">
+        <i class="bi bi-cake"></i>
+         <span class="links_name">Birthday</span>
+       </a>
+       <span class="tooltip">Birthday</span>
+     </li>
+     <li>
+       <a href="holidays.html">
+        <i class="bi bi-gift"></i>
+         <span class="links_name">Holidays</span>
+       </a>
+       <span class="tooltip">Holidays</span>
+     </li>
+     <li>
+       <a href="dedication.html">
+        <i class="bi bi-envelope"></i>
+         <span class="links_name">Dedication</span>
+       </a>
+       <span class="tooltip">Dedication</span>
+     </li>
+
+    </ul>
+  </div>
+  <main class="home-section">
+
+    <div id="row-espacio" class="row"></div>
+
+    <div id="row-titulo"class="row">
+        <header>Welcome to your website, Emilia!</header>
+        <h1>this is the gift i have long promised to give you. I hope it is to you liking.</h1>
+    </div>
+
+    <div id="row-espacio" class="row"></div>
+
+    <div id="row-subtitulo"  class="row">
+      <header>How it is distributed?</header>
+    </div>
+
+    <div id="row-espacio-small" class="row"></div>
+
+    <div id="row-texto" class="row">
+      <h1>So As you can see at the left side of the screen, there is a menu with the conteNts of the website. It is distributed in eighT pages, without counting this one, and each one of them has a certain dynamic.<br><br>
+        As usual in websites, you just click in the three lines in the upper left cOrner and it opens and closes, so yeah.<br><br>
+        Hope you like the icoNs, i spent a while searching for the ones i thought were pretty and well, matched the theme ofc.<br><br>
+        Anyway, so you can click in any of them to see what each of them contain, it has to do with theIr name yk; hope you like it.<br><br>
+        Btw, there is an eAster egg, so tell me if you find it.<br>
+      </h1>
+    </div>
+
+    <div id="row-espacio-small" class="row"></div>
+  </main>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
